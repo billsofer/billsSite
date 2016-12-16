@@ -1,0 +1,17 @@
+	{% extends 'base_blog.html' %}
+	{% load staticfiles %}
+	{% block css %}
+		<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
+	{% endblock css %}
+	{% block content %}
+			<div class="post">
+			{% if post.published_date %}
+            	<div class="date">
+                <h4>{{ post.published_date }}</h4>
+            	</div>
+        	{% endif %}
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+
+	{% endblock content %}

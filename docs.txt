@@ -1,0 +1,24 @@
+On 12/16, I started a project called “mysite. ” I set it up as follows:
+	1. I set up a virtual environment called venvs on the Desktop with the command: “virtualenv --python=python3.5 venvs”. See the directions for Virtual Environments in Notes.
+	2. I activated the virtual environment with the command "source venvs/bin/activate" on the desktop.
+	3. I then installed django with the commend ”pip install django”. It installed the latest version of django which was 1.10.4
+	4. I issued the command: "django-admin startproject mysite" It set up a mysite folder on the Desktop with two things in it: manage.py, and a folder called mysite. In this other mysite folder were a settings.py file, a wdgi.py file, and a urls.py file (and an __init__py file too).
+	5. I then went to the outer mysite directory and typed: python manage.py runserver. It returned: “You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.” No issues were detected. It said:  Run 'python manage.py migrate' to apply them.
+	6. I did that. Again all was OK.
+	7. I created a superuser by typing “python manage.py createsuperuser” It asked for my name. I used the default “williamsofer”, and an email address which I gave. I used the password “-------”. All went well.
+	8. When I ran the server with the command “python manage.py runserver”, and added “admin” to 127.0.0. 1:8000/ in the browser, it asked me to log in and when I typed the username and password, the admin site showed up. Quit the runserver by typing control-C.
+	9. In BBEdit, I opened a new project and called it “mysite Project”. I opened the mysite outer folder to include all the files in the folder in the project.
+	10. I added five apps by typing "python manage.py startapp <name of app>" where the names of the apps were myintro, mycourses, myphotos, myblogs, and mybooks. 
+	(BTW, I got an error message when I commented out something in a template that I hadn't yet referenced. It appears that regardless of whether something is commented, it is still recognized by django!).
+	
+	I started the blogs with the following blog post.
+	
+	Call me Bill. 
+
+I was brought up in the East New York section of Brooklyn, known then for being the dumping ground for victims of the mob. A few miles from where I lived, was a great marshland that nobody ventured upon and where a body could rot undisturbed for years.
+
+Not that I ever saw any mobsters or bodies. Ours was a quiet mostly Jewish neighborhood with tree-lined blocks of two story, four family houses separated by narrow alleys. My house was the closest one to the "el", an elevated part of the old IRT subway line that terminated a few stops away. The trains would run all night but it was only when I was 16 and got a job out of the city for the summer that I realized that there were areas in which a screechy train didn't come by every half hour or so. All that summer I couldn't get used to the quiet.
+
+My grandfather, zaidie, the patriarch of the family owned our building, a two story affair with four apartments. He had moved his two daughters and their husbands from the slums of the lower East Side into what must have felt like the country.  My aunts occupied two of the apartments, one in the first floor front and the other in the second floor rear. He and his wife, my bubbie, lived upstairs facing the street. When my father got married, he and his new bride moved into the ground floor rear apartment. My mother never forgave him. She had to put up with her two sisters-in-law as well as a mother-in-law in close proximity. My aunts were kind and respectful, not much of a bother, even helpful, but bubbie and mom had some incompatibilities. Perhaps the greatest were bubbie's standards of cleanliness. The whole house stank. At regular intervals chickens from a relative in New Jersey would inhabit the small space alongside the stairwell. And at holiday time, a live carp would occupy a bathtub. I often wondered whether my grandparents shared the bath with the fish or just didn't bathe while the tub was being otherwise used.
+
+Despite the odors and the inlaws, my parents remained in my zaidie's house for 14 or 15 years. The main attraction was the rent, which, as I recall was less then $30/month.

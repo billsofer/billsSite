@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>73EC0FD4-8B8A-4772-8C83-920A3743A81D</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>73EC0FD4-8B8A-4772-8C83-920A3743A81D</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va6ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAhAIAAAUAAAABAQAAVXNlcnMA
+				AAAMAAAAAQEAAHdpbGxpYW1zb2ZlcgcAAAABAQAARGVz
+				a3RvcAAJAAAAAQEAAGJpbGxzU2l0ZQAAABAAAAABBgAA
+				BAAAABQAAAAoAAAAOAAAAAgAAAAEAwAALTAGAAAAAAAI
+				AAAABAMAAI6KBgAAAAAACAAAAAQDAAAIuwYAAAAAAAgA
+				AAAEAwAAgZ57AAAAAAAQAAAAAQYAAGQAAAB0AAAAhAAA
+				AJQAAAAIAAAAAAQAAEG+BD7bAAAAGAAAAAECAAACAAAA
+				AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+				AwAAAQAAAAQAAAADAwAAAgAAAAQAAAADAwAA9QEAABEA
+				AAABCQAAZmlsZTovL2xvY2FsaG9zdC8AAAANAAAAAQEA
+				AE1hYyBPU1ggLSBTU0QAAAAIAAAABAMAAACAnK3oAAAA
+				CAAAAAAEAABBvYi1ggAAACQAAAABAQAAMkVDM0U0MUQt
+				MzZFMS0zQTBCLUI1NkItN0I0ODZGNDc3M0Q5GAAAAAEC
+				AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEA
+				AC8AAAC2AAAAAQIAADJjYzY2NmM1ZDg0YmI4YzJjZWQy
+				N2ZhN2I0NWNhYjFiMDJhZWViMTI7MDAwMDAwMDA7MDAw
+				MDAwMDA7MDAwMDAwMDAwMDAwMDAyMDtjb20uYXBwbGUu
+				YXBwLXNhbmRib3gucmVhZC13cml0ZTswMDAwMDAwMTsw
+				MTAwMDAwMjswMDAwMDAwMDAwN2I5ZTgxOy91c2Vycy93
+				aWxsaWFtc29mZXIvZGVza3RvcC9iaWxsc3NpdGUAAADk
+				AAAA/v///wEAAAAAAAAAEgAAAAQQAABMAAAAAAAAAAUQ
+				AACkAAAAAAAAABAQAADMAAAAAAAAAEAQAAC8AAAAAAAA
+				AFUQAAD0AAAAAAAAAFYQAADsAAAAAAAAAAIgAAC4AQAA
+				AAAAAAUgAAAYAQAAAAAAABAgAAA0AQAAAAAAABEgAABs
+				AQAAAAAAABIgAABMAQAAAAAAABMgAABcAQAAAAAAACAg
+				AACYAQAAAAAAADAgAADsAAAAAAAAAAHAAAAAAQAAAAAA
+				ABHAAAAUAAAAAAAAABLAAAAMAQAAAAAAAIDwAADEAQAA
+				AAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/williamsofer/Desktop/billsSite/</string>
+				<key>RelativePath</key>
+				<string>./billsSite</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>billsSite</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
