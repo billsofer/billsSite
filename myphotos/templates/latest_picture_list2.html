@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	{% block css %}
+	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
+	
+	{% endblock css %}
+	{% block content %}
+	{% if latest_picture_list %}
+		{% for pictures in latest_picture_list %}
+			{% cycle "" "" "" "<div class='row'>" %}
+			<div class='col-sm-3 col-md-3 col-lg-3'>
+				<div class="clearfix visible-lg"></div>
+				<h4>
+					<a href="{% url 'detail2' pk=pictures.pk %}">
+					{{forloop.counter}}. {{ pictures.name }}</a>
+				</h4>
+				<h5> Subject: {{pictures.subject}}</h5>
+				<h5> Date: {{pictures.date}}</h5>
+				<h5> Location: {{pictures.location}}</h5>
+				<h2></h2>
+				<img 
+				class="img-thumbnail medium align-center" 
+				src="{% static pictures.image %}" />
+				<hr>
+			</div>
+			{% cycle "" "" "" "</div>" %}
+		{% endfor %}
+			</div>
+	{% else %}
+		<p>No pictures in database </p>
+	{% endif %}
+	{% endblock content %}

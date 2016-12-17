@@ -6,35 +6,35 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	{% block css %}{% endblock css %}
 	<head>
 		<title>Bill's Site </title>
 	</head>
-	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
 	<body>
-		<nav class = "navbar navbar-inverse">
+	<nav class = "navbar navbar-inverse">
 			<div class = "container-fluid">
 				<div class = "navbar-header">
 				<div>
 					<ul class = "nav navbar-nav">
-					<li class="active"><a href="#"><h3>Home</h3></a></li>
-					<li><a href="{% url 'post_list'%}"><h3>Blog</h3></a></li>
-					<li><a href="#"><h3>Books</h3></a></li>
-					<li class="active"><a href="{% url 'courses'%}"><h3>Courses</h3></a></li>
-					<li><a href="<a href="{% url 'index' %}"><h3>Photos</h3></a></li>
-					
+						<li><a href="{% url 'intro' %}"><h3>Home</h3></a></li>
+						<li><a href="{% url 'post_list'%}"><h3>Blog</h3></a></li>
+						<li><a href="#"><h3>Books</h3></a></li>
+						<li><a href="{% url 'courses'%}"><h3>Courses</h3></a></li>
+						<li class="active"><a href="{% url 'index' %}"><h3>Photos</h3></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-						
 		<div class='container'>
-		<p></br></p>
 		<div class='jumbotron'>
-			<h2>Bill's Website </h2>
+			<h2>My Photos </h2>
 			<h5>Current date/time: {{ currentdate}}</h5>
 		</div>
 		<hr>
-	{% block introcontent %}
-	{% endblock introcontent %}
+	{% block content %}
+	{% endblock content %}
+	
+	{% block footer %}
+	{% endblock footer %}
 	</body>
 </html>

@@ -9,4 +9,4 @@ import datetime
 def intro(request):
 	this_date = timezone.now()
 	context = {'currentdate':this_date}
-	return render(request, 'intro_base.html', context)
+	return render(request, 'intro_more.html', context)

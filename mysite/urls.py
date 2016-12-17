@@ -22,7 +22,7 @@ from myblog.views import post_detail, post_list
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^post', include('myblog.urls')),
-    # url(r'^photos', include('photos.urls')),
-    # url(r'^classes', include('classes.urls')),
+    url(r'^photos', include('myphotos.urls')),
+    url(r'^courses', include('mycourses.urls')),
     url(r'^$', intro, name="intro"),
 ]

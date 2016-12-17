@@ -1,0 +1,30 @@
+h2, h5 {
+    color: blue;
+    font-family: Verdana, Geneva, sans-serif;
+}
+h3, h4 {
+	color: white;
+}
+p {
+	color:white;
+}
+
+a {
+	color:darkblue;
+}
+
+body { 
+background-color:slategray; 
+font-family: Georgia, serif;
+}
+
+img.medium {
+
+height:250px;
+}
+
+img.align-center {
+
+display: block;
+margin: 10px auto;
+}

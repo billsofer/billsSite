@@ -1,0 +1,17 @@
+{% extends 'blog/base_blog.html' %}
+{% load staticfiles %}
+	{% block css %}
+	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
+	{% endblock css %}
+	
+	{% block content %}
+	<div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+		<h3>{{picture.name}}</h3>
+		<h5>{{picture.date}}, {{picture.location}}</h5>
+		<img class="img-fluid img-thumbnail align-center" 
+					src="{% static picture.image %}" />
+		<h4>{{picture.description}}</h4>
+	</div>
+	<p></p></br>
+	{% endblock content %}
+
