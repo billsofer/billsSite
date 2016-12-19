@@ -13,7 +13,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Bill's Blog</title>
+	<title>Bill's Site</title>
 	<meta name="generator" content="BBEdit 10.5" />
 </head>
 {% block css %}
@@ -25,7 +25,7 @@
 				<div>
 					<ul class = "nav navbar-nav">
 						<li><a href="{% url 'intro' %}"><h3>Home</h3></a></li>
-						<li><a href="{% url 'post_list'%}"><h3>Blog</h3></a></li>
+						<li><a href="{% url 'post_list'%}"><h3>Memoir</h3></a></li>
 						<li><a href="#"><h3>Books</h3></a></li>
 						<li class="active"><a href="{% url 'courses' %}"> <h3>Courses</h3></a></li>
 						<li><a href="{% url 'index' %}"><h3>Photos</h3></a></li>
@@ -35,7 +35,7 @@
 		</nav>
 		<div class='container'>
 		<div class='jumbotron'>
-			<h2>My Blog </h2>
+			<h2>My Courses </h2>
 			<h5>Current date/time: {{ currentdate}}</h5>
 		</div>
 		<hr>
