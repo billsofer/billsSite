@@ -12,7 +12,9 @@ h5 {
 }
 
 p {
-	color:white;
+	color:black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
 }
 
 a {
