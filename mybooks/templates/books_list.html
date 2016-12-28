@@ -1,19 +1,24 @@
 {% extends 'base_books.html' %}
-		{% load staticfiles %}
+{% load staticfiles %}
 		{% block css %}
-		<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
+		
+		<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />		
 		{% endblock css %}
+		
 		{% block content %}
 
 		<div class="col-lg-4">
 				<h3><a href="https://www.buffalolib.org/vufind/Record/736089/Reviews">{{IGE}}</a></h3></a>
 				<h4>This book is out of print and out of date.</h4>
+				<img src="{% static 'IntroGenEngineering.jpg' %}" alt="book cover" width="165px" height="237px" />
 		</div>
 		
 			<div class="col-lg-4">
 			<h3><a href="https://itunes.apple.com/us/book/clones-and-stem-cells/id1115953024?mt=11">{{CSC}}</a></h3>
+		<img src="{% static 'ClonesStemCells.jpg' %}" alt="Clones and Stem Cells" width="165px" height="237px" />
 		</div>
 			<div class="col-lg-4">
 			<h3><a href="https://itunes.apple.com/us/book/giants-of-genetics/id527020301?mt=11">{{GOG}}</a></h3>
+			<img src="{% static 'GiantsGenetics.jpg' %}" alt="Giants of Genetics" width="165px" height="237px" />
 		</div>
 		{% endblock content %}
