@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 	{% block css %}
 	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
 	
@@ -25,6 +25,7 @@
 			</div>
 			{% cycle "" "" "" "</div>" %}
 		{% endfor %}
+			<!-- <a href="#"><h2>More -> </h2></a> -->
 			</div>
 	{% else %}
 		<p>No pictures in database </p>

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+	{% block css %}
+	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
+	
+	{% endblock css %}
+	{% block content %}
+	{% if users %}
+		{% for user in users %}
+			{% cycle "" "" "" "<div class='row'>" %}
+			<div class='col-sm-3 col-md-4 col-lg-4'>
+				<div class="clearfix visible-lg"></div>
+				<h4>
+					<a href="{% url 'detail2' pk=user.pk %}">
+					{{ user.name }}</a>
+				</h4>
+				<h5> Subject: {{user.subject}}</h5>
+				<h5> Date: {{user.date}}</h5>
+				<h5> Location: {{user.location}}</h5>
+				<h2></h2>
+				<img 
+				class="img-thumbnail medium align-center" 
+				src="{% static user.image %}" />
+				<hr>
+			</div>
+			{% cycle "" "" "" "</div>" %}
+		{% endfor %}
+		{% else %}
+		<p>No pictures in database </p>
+		{% endif %}
+
+	{% endblock content %}
+	
+	{% block footer %}
+	<div class='col-sm-6 col-md-12 col-lg-12'>		
+		{% if users.has_other_pages %}
+  			<ul class="pagination">
+    		{% if users.has_previous %}
+      			<li><a href="?page={{ users.previous_page_number }}">&laquo;</a></li>
+    		{% else %}
+      	<li class="disabled"><span>&laquo;</span></li>
+    	{% endif %}
+    	{% for i in users.paginator.page_range %}
+      		{% if users.number == i %}
+        		<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      		{% else %}
+        		<li><a href="?page={{ i }}">{{ i }}</a></li>
+      		{% endif %}
+    	{% endfor %}
+    	{% if users.has_next %}
+      		<li><a href="?page={{ users.next_page_number }}">&raquo;</a></li>
+    	{% else %}
+      		<li class="disabled"><span>&raquo;</span></li>
+    	{% endif %}
+  		</ul>
+	{% endif %}
+	</div>
+	{% endblock footer %}
+
+	
