@@ -3,12 +3,22 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 import datetime
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def post_list(request):
 	this_date = timezone.now()
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-	return render(request, 'post_list.html', {'posts':posts, 'currentdate':this_date})
+	# new Paginator code starts here ...
+	page = request.GET.get('page', 1)
+	paginator = Paginator(posts, 2)
+	try:
+		users = paginator.page(page)
+	except PageNotAnInteger:
+		users = paginator.page(1)
+	except EmptyPage:
+		users = paginator.page(paginator.num_pages) 
+	return render(request, 'post_list.html', {'users':users, 'currentdate':this_date})
 	
 def post_detail(request, pk):
 	# assert False, "I'm in postdetail"
